@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+
+body{
+  background-color: #1d505f !important;}
+*{
+  padding: 0;
+  font-family:'Roboto', Times, serif;
+  color:#60daaa;
+}
+
+
+.nav{
+  background-color: #192020;
+}
+
+.nav a{
+  color: #60daaa;
+  font-size: large;
+}
+
+#nav-prin:hover{
+  color: rgb(255, 255, 255);
+}
+
+.imagen-perfil{
+  border:none;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.iconos-usr{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.bi{
+  color:#60daaa;
+}
+.icons-contact:hover{
+  opacity: 0.6;
+  transform: scale(1.5) translate(20%);
+}
+
+a{
+  padding: 1rem;
+}
+
+h1{
+  text-align:center;
+  padding: 2.5rem;
+}
+
+p{
+  text-align:justify;
+}
+
+.accordion{
+  padding: 2rem;
+}
+#accordion{
+  color:#60daaa;
+  background: #1d505f;
+  border-color: #60daaa;
+}
+
+
+.nav-academic{
+  width: 100%;
+  border: none;
+}
+
+#navbar-example3{
+  padding: 2rem;
+}
+
+.container{
+  padding: 1rem;
+  text-align: center;
+}
+.container li{
+  list-style: none;
+}
+
+.idiomas{
+  padding-top: 1rem;
+  width: 20%;
+  height: 15%;
+  justify-content: left;
+}
+#port-red{
+  width : 23%;
+  height : 15%;
+}
+
+.title-idiomas{
+  font-size: xx-large;
+  color: rgba(0, 1, 1, 0.715);
+  align-items: center;
+  padding: 2rem 0 0 0 ;
+}
+
+.nivel{
+  color: rgba(0, 1, 1, 0.715) ;
+}
+
+#boton{
+  color:#60daaa;
+}
+
+
+.draw {
+  overflow: hidden;
+  position: relative;
+}
+.draw::before, .draw::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  animation: border 2s infinite;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+  animation: border 2s 1s infinite, borderColor 2s 1s infinite;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes borderColor {
+  0% {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+  }
+  50% {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+  }
+  51% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
